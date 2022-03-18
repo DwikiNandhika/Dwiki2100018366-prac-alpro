@@ -36,32 +36,34 @@ int main(){
         case 4:
             cout << " Anda Memiilih Pengurangan [ - ]" << "\n";break;
         }
-        cout << " angka pertama = "; cin >> satu;
-        cout << " angka kedua = "; cin >> dua;
-        switch (pil)
-	
-	switch(pil){
-	        case 1 : hasil=bil1+bil2;
-			operasi='+';
-			break;
-		case 2 : hasil=bil1-bil2;
-			operasi='-';
-			break;
-		case 3 : hasil=bil1*bil2;
-			operasi='*';
-			break;
-		case 4 : hasil=bil1/bil2;
-			operasi='/';
-			break;
-		case 5 : hasil=bil1%bil2;
-			 operasi='%';
-			break;
-		default :
-			cout<<"Salah Masukan Operator"<<endl;
+	cout << " Angka pertama = "; cin >> satu;
+	cout << " Angka kedua = "; cin >> kedua;
+		switch (pil)
+		{
+			case 1:
+				cout << " " << satu << "+" << dua << " = " << satu + dua << "\n"; break;
+			case 2:
+				cout << " " << satu << ":" << dua << " = " << satu/dua << "\n"; break;
+			case 3:
+				cout << " " << satu << "x" << dua << " = " << satu*dua << "\n"; break;
+			case 4:
+				cout << " " << satu << "-" << dua << " = " << satu-dua << "\n"; break;
+		}
 	}
-	cout<<"-----------------------------"<<endl;
-	cout<<"    "<<bil1<<operasi<<bil2<<"="<<hasil<<endl;
-	cout<<"-----------------------------"<<endl;
-	
-	getch();
+	else
+	{
+		cout << " Kesalahan silahkan ulangi !" << "\n\n\n";
+	}
+	cout << endl;
+	cout << " Pilih lagi = [1] / tidak [2] ??";
+	cin >> lagi;
+	if (lagi == 1)
+	{
+		system("cls");
+		goto a;
+	}
+	else if(lagi == 2)
+	{
+		system("cls");
+	}
 }
