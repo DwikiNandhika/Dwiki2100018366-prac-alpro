@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>
-#include <string>
+#include <stdio.h>
 #include <windows>
 
 using namespace std;
