@@ -19,12 +19,26 @@ int main(){
 	cout<<"4. Pengurangan"<<endl;
 	cout<<"masukkan pilihan = "; cin >> pil;
 	
-	cout<<"Masukan Pilihan : ";
-	cin>>pil;
-	cout<<"Masukan Bilangan pertama : ";
-	cin>>bil1;
-	cout<<"Masukan Bilangan kedua : ";
-	cin>>bil2;	
+	if (pil<=4 && pil>=1)
+    {
+        cout << endl;
+        switch (pil)
+        {
+        case 1:
+            cout << " Anda Memiilih Penjumlahan [ + ]" << "\n";break;
+
+        case 2:
+            cout << " Anda Memiilih Pembagian [ : ]" << "\n";break;
+
+        case 3:
+            cout << " Anda Memiilih Perkalian [ x ]" << "\n";break;
+
+        case 4:
+            cout << " Anda Memiilih Pengurangan [ - ]" << "\n";break;
+        }
+        cout << " angka pertama = "; cin >> satu;
+        cout << " angka kedua = "; cin >> dua;
+        switch (pil)
 	
 	switch(pil){
 	        case 1 : hasil=bil1+bil2;
