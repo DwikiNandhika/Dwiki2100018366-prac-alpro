@@ -1,22 +1,23 @@
-#include <conio.h>
 #include <iostream>
+#include <stdlib.h>
+#include <conio.h>
 #include <string>
+#include <windows>
 
 using namespace std;
 
 int main(){
-	
-	int bil1,bil2, pil;
-	float hasil;
+	a:
+	system("color 0a");
+	cout<<"==================================\n";
+	int pil,lagi;;
+	float satu,dua;
 	string operasi;
-	
-	cout<<"PILIH OPERATOR ARITMATIKA"<<endl;
 	cout<<"1. Penjumlahan"<<endl;
-	cout<<"2. Pengurangan"<<endl;
+	cout<<"2. Pembagian"<<endl;
 	cout<<"3. Perkalian"<<endl;
-	cout<<"4. Pembagian"<<endl;
-	cout<<"5. Modulus"<<endl;
-	cout<<endl;
+	cout<<"4. Pengurangan"<<endl;
+	cout<<"masukkan pilihan = "; cin >> pil;
 	
 	cout<<"Masukan Pilihan : ";
 	cin>>pil;
